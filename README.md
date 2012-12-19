@@ -12,4 +12,8 @@ SilverStripe 3
 Usage
 --------
 
-TimePickerField::create('Time');
+	TimePickerField::create('Time');
+
+You can set any of the [http://fgelinas.com/code/timepicker/#usage](configurations) by using:
+
+	TimePickerField::create('Time')->setTimePickerConfig($key, $value);

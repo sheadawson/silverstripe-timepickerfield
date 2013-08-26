@@ -1,5 +1,5 @@
 {
-	"name": "silverstripe/timepickerfield",
+	"name": "sheadawson/timepickerfield",
 	"description": "A time picker field for SilverStripe based on the jQuery UI Timepicker By François Gélinas http://fgelinas.com/code/timepicker/",
 	"type": "silverstripe-module",
 	"keywords": ["silverstripe", "forms", "time"],
@@ -15,5 +15,6 @@
 	{
 		"silverstripe/framework": "3.*",
 		"composer/installers": "*"
-	}
+	},
+	"replace": "silverstripe/timepickerfield",
 }

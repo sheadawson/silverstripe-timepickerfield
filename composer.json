@@ -16,5 +16,5 @@
 		"silverstripe/framework": "3.*",
 		"composer/installers": "*"
 	},
-	"replace": "silverstripe/timepickerfield"
+	"replace": {"silverstripe/timepickerfield": "*"}
 }

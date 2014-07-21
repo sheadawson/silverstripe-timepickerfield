@@ -11,7 +11,7 @@
 		}
 	});
 
-	$('.field.time input.text').live('click', function() {
+	$('input.time').live('click', function() {
 		$(this).ssTimepicker();
 	});
 

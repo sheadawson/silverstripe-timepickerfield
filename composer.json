@@ -16,5 +16,9 @@
 		"silverstripe/framework": "3.*",
 		"composer/installers": "*"
 	},
-	"replace": {"silverstripe/timepickerfield": "*"}
+	"extra": {
+    		"branch-alias": {
+        		"dev-master": "1.0.x-dev"
+    		}
+	}
 }

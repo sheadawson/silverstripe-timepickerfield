@@ -1,5 +1,5 @@
 {
-	"name": "sheadawson/timepickerfield",
+	"name": "silverstripe/timepickerfield",
 	"description": "A time picker field for SilverStripe based on the jQuery UI Timepicker By François Gélinas http://fgelinas.com/code/timepicker/",
 	"type": "silverstripe-module",
 	"keywords": ["silverstripe", "forms", "time"],
@@ -7,7 +7,7 @@
 	"authors": [
 	{
 		"name": "Shea Dawson",
-		"email": "shea@silverstripe.com.au"
+		"email": "shea@livesource.co.nz"
 	}
 	],
 

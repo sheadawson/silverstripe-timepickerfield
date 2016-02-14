@@ -18,7 +18,11 @@ You can set any of the [http://fgelinas.com/code/timepicker/#usage](configuratio
 
 	TimePickerField::create('Time')->setTimePickerConfig($key, $value);
 	
-For usage with DatetimeField, you can use the DatetimeField API to swap out the time field
+If you need to modify an existing DatetimeField, you can set the time field to a picker by using:
 
     $field = DatetimeField::create('DateAndTime');
     $field->setTimeField(TimePickerField::create('DateAndTime'));
+    
+Or if you like you can also use the following to create a DateTimePickerField from scratch:
+
+    $field = DatetimePickerField::create('DateAndTime');

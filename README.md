@@ -17,3 +17,8 @@ Usage
 You can set any of the [http://fgelinas.com/code/timepicker/#usage](configurations) by using:
 
 	TimePickerField::create('Time')->setTimePickerConfig($key, $value);
+	
+For usage with DatetimeField, you can use the DatetimeField API to swap out the time field
+
+    $field = DatetimeField::create('DateAndTime');
+    $field->setTimeField(TimePickerField::create('DateAndTime'));

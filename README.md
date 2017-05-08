@@ -9,6 +9,13 @@ Requirements
 
 SilverStripe 3
 
+Instalation
+--------
+
+```bash
+composer require sheadawson/silverstripe-timepickerfield
+```
+
 Usage
 --------
 

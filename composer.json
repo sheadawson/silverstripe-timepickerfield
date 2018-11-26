@@ -1,24 +1,28 @@
 {
-	"name": "silverstripe/timepickerfield",
-	"description": "A time picker field for SilverStripe based on the jQuery UI Timepicker By François Gélinas http://fgelinas.com/code/timepicker/",
-	"type": "silverstripe-module",
-	"keywords": ["silverstripe", "forms", "time"],
-	"homepage": "http://github.com/sheadawson/silverstripe-timepickerfield",
-	"authors": [
-	{
-		"name": "Shea Dawson",
-		"email": "shea@livesource.co.nz"
-	}
-	],
-
-	"require":
-	{
-		"silverstripe/framework": "3.*",
-		"composer/installers": "*"
-	},
-	"extra": {
-    		"branch-alias": {
-        		"dev-master": "1.0.x-dev"
-    		}
-	}
+    "name": "silverstripe/timepickerfield",
+    "description": "A time picker field for SilverStripe based on the jQuery UI Timepicker By François Gélinas http://fgelinas.com/code/timepicker/",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "forms",
+        "time"
+    ],
+    "homepage": "http://github.com/sheadawson/silverstripe-timepickerfield",
+    "authors": [
+        {
+            "name": "Shea Dawson",
+            "email": "shea@livesource.co.nz"
+        }
+    ],
+    "require": {
+        "silverstripe/framework": "^4.0",
+        "composer/installers": "*"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

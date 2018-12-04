@@ -1,7 +1,7 @@
 /*
  * Timepicker stylesheet
  * Highly inspired from datepicker
- * FG - Nov 2010 - Web3R 
+ * FG - Nov 2010 - Web3R
  *
  * version 0.0.3 : Fixed some settings, more dynamic
  * version 0.0.4 : Removed width:100% on tables
@@ -33,10 +33,10 @@
 .ui-timepicker-table td a {
     display:block;
     padding:0.2em 0.3em 0.2em 0.5em;
-    width: 1.2em;
+    width: 2em;
     cursor: pointer;
-    text-align:right;
-    text-decoration:none;
+    text-align: center;
+    text-decoration: none;
 }
 
 

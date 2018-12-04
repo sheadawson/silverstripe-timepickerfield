@@ -11,6 +11,15 @@ class TimePickerField extends TimeField
 {
 
     /**
+     * Use HTML5-based input fields (and force ISO 8601 time formats).
+     *
+     * @var bool
+     */
+    protected $html5 = false;
+
+    protected $timeFormat = "hh:mm a";
+
+    /**
      * @var array
      */
     protected $timePickerConfig = array();
@@ -26,13 +35,13 @@ class TimePickerField extends TimeField
              ->setAttribute('autocomplete', 'off')
              ->setAttribute('data-jqueryuiconfig', Convert::array2json($this->timePickerConfig));
 
-        Requirements::javascript(THIRDPARTY_DIR . '/jquery/jquery.js');
-        Requirements::css(THIRDPARTY_DIR . '/jquery-ui-themes/smoothness/jquery-ui.css');
-        Requirements::javascript(FRAMEWORK_DIR . '/thirdparty/jquery-ui/jquery-ui.js');
+        Requirements::javascript('silverstripe/admin: thirdparty/jquery/jquery.js');
+        Requirements::javascript('silverstripe/admin: thirdparty/jquery-ui-themes/smoothness/jquery-ui.css');
+        Requirements::javascript('silverstripe/admin: thirdparty/jquery-ui/jquery-ui.js');
 
-        Requirements::javascript('SheaDawson/TimePickerField:client/javascript/jquery.ui.timepicker.js');
-        Requirements::javascript('SheaDawson/TimePickerField:client/javascript/timepickerfield.js');
-        Requirements::css('SheaDawson/TimePickerField:client/css/jquery.ui.timepicker.css');
+        Requirements::javascript('silverstripe/timepickerfield:client/javascript/jquery.ui.timepicker.js');
+        Requirements::javascript('silverstripe/timepickerfield:client/javascript/timepickerfield.js');
+        Requirements::css('silverstripe/timepickerfield:client/css/jquery.ui.timepicker.css');
 
         return parent::Field($properties);
     }

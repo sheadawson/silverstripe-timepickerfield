@@ -21,7 +21,11 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
-        }
+        },
+        "expose": [
+            "client/css/",
+            "client/javascript/"
+        ]
     },
     "minimum-stability": "dev",
     "prefer-stable": true

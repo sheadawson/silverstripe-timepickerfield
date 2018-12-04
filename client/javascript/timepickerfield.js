@@ -12,7 +12,9 @@
 	});
 
 	$(document).on('click', 'input.time', function() {
-		$(this).ssTimepicker();
+		$(this).ssTimepicker({
+            showPeriod: true, // Needed in order to save it back to db properly
+        });
 	});
 
 }(jQuery));

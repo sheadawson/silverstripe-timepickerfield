@@ -23,7 +23,8 @@ class DatetimePickerField extends DatetimeField
     {
         parent::__construct($name, $title, $value);
 
-        $this->setTimeField(
+        $this->setField(
+            $name,
             TimepickerField::create($name . '[time]', false)
                 ->addExtraClass('fieldgroup-field')
         );

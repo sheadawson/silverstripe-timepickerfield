@@ -16,7 +16,7 @@ Usage
 TimePickerField::create('Time');
 ```
 
-You can set any of the [http://fgelinas.com/code/timepicker/#usage](configurations) by using:
+You can set any of the [configurations](http://fgelinas.com/code/timepicker/#usage) by using:
 
 ```php
 TimePickerField::create('Time')->setTimePickerConfig($key, $value);

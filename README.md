@@ -16,7 +16,7 @@ Usage
 TimePickerField::create('Time');
 ```
 
-You can set any of the [http://fgelinas.com/code/timepicker/#usage](configurations) by using:
+You can set any of the [configurations](http://fgelinas.com/code/timepicker/#usage) by using:
 
 ```php
 TimePickerField::create('Time')->setTimePickerConfig($key, $value);
@@ -25,7 +25,11 @@ If you need to modify an existing DatetimeField, you can set the time field to a
 
 ```php
 $field = DatetimeField::create('DateAndTime');
-$field->setTimeField(TimePickerField::create('DateAndTime[time]')->setTitle('DateAndTime');
+$field->setField(
+    'DateAndTime',
+    TimePickerField::create('DateAndTime[time]')
+        ->setTitle('DateAndTime')
+);
 ```
 
 Or if you like you can also use the following to create a DateTimePickerField from scratch:
